@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <section>
+        <div class="cointainer">
+            <h1>Jokenpô</h1>
+            <div class="mini-cointainer">
+                <div class="mini-mini-cointainer">
+                    <p class="text">Você:</p>
+                    <p class="result-text" id="human-choice">✋</p>
+                </div>
+
+                <p class="x">X</p>
+
+                <div class="mini-mini-cointainer">
+                    <p class="text">Alexa:</p>
+                    <p class="result-text" id="machine-choice">✋</p>
+                </div>
+            </div>
+
+            <p class="result"></p>
+
+            <div class="texts-2">
+                <p class="your-score">Sua Pontuação: <span id="human-score">0</span></p>
+                <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
+                <p class="draws-score">Empates: <span id="draws-score">0</span></p>
+            </div>
+
+            
+            <div class="opitions-select">
+                <button class="button-select" id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+                <button class="button-select" id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+                <button class="button-select" id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+            </div>
+
+            <button class="button-reset" onclick="buttonReset()">Resetar</button>
+        </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
