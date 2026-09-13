@@ -60,9 +60,12 @@ const playTheGame = (human, machine) => {
 }
 
 const buttonReset = () => {
+    humanScoreNumber = 0
+    machineScoreNumber = 0
+    drawsScoreNumber = 0
     drawsScore.innerHTML = 0
     humanScore.innerHTML = 0
-    machineScore.innerHTML= 0
+    machineScore.innerHTML = 0
     result.innerHTML = " "
     machineChoiceImg.innerHTML = '✋'
     humanChoiceImg.innerHTML = '✋'
